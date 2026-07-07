@@ -1,81 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="image-section">
-        <img class="background-image" src="assets/images/halie-west.jpg" alt="Background image">
-        <div class="logo-card">
-            <img src="assets/images/odin-lined.png" alt="Odin logo" class="logo-image">
-            <p class="logo-text">ODIN</p>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-up</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="image-section">
+            <img class="background-image" src="assets/images/halie-west.jpg" alt="Background image">
+            <div class="logo-card">
+                <img src="assets/images/odin-lined.png" alt="Odin logo" class="logo-image">
+                <p class="logo-text">ODIN</p>
+            </div>
 
-        <div class="image-info">
-            <p>Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank">Unsplash</a></p>
+            <div class="image-info">
+                <p>Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank">Unsplash</a></p>
+            </div>
         </div>
-    </div>
-    <div class="form-container">
-        <div class="text-section">
-            <p>
+        <div class="form-container">
+            <div class="text-section">
+                <p>
                 This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
                 Sign up <em>now</em> to get started.
-            </p>
-            <p>
+                </p>
+                <p>
                 You <em>know</em> you want to.
-            </p>
+                </p>
+            </div>
+            <div class="signup-form-section">
+                <form>
+                    <div class="form-contents">
+                        <p>Let's do this!</p>
+                        <div class="fields-grid">
+                            <div class="field-container">
+                                <label for="first-name">
+                                    FIRST NAME
+                                </label>
+                                <input type="text" name="first-name" id="first-name">
+                            </div>
+                            <div class="field-container">
+                                <label for="last-name">
+                                    LAST NAME
+                                </label>
+                                <input type="text" name="last-name" id="last-name">
+                            </div>
+                            <div class="field-container">
+                                <label for="user-email">
+                                    EMAIL
+                                </label>
+                                <input type="email" name="user-email" id="user-email">
+                            </div>
+                            <div class="field-container">
+                                <label for="user-phone-number">
+                                    PHONE NUMBER
+                                </label>
+                                <input type="text" name="user-phone-number" id="user-phone-number">
+                            </div>
+                            <div class="field-container">
+                                <label for="user-password">
+                                    PASSWORD
+                                </label>
+                                <input 
+                                    type="password" 
+                                    name="user-password" 
+                                    id="user-password"
+                                    minlength="8"
+                                    required
+                                >
+                            </div>
+                            <div class="field-container">
+                                <label for="confirm-password">
+                                    CONFIRM PASSWORD
+                                </label>
+                                <input 
+                                    type="password" 
+                                    name="confirm-password" 
+                                    id="confirm-password"
+                                    minlength="8"
+                                    required
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="signup-form-section">
-            <h1>Let's do this!</h1>
-            <form>
-                <div class="fields-grid">
-                    <div class="field-container">
-                        <label for="first-name">
-                            FIRST NAME
-                        </label>
-                        <input type="text" name="first-name" id="first-name">
-                    </div>
-                    <div class="field-container">
-                        <label for="last-name">
-                            LAST NAME
-                        </label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div>
-                    <div class="field-container">
-                        <label for="user-email">
-                            EMAIL
-                        </label>
-                        <input type="email" name="user-email" id="user-email">
-                    </div>
-                    <div class="field-container">
-                        <label for="user-phone-number">
-                            PHONE NUMBER
-                        </label>
-                        <input type="text" name="user-phone-number" id="user-phone-number">
-                    </div>
-                    <div class="field-container">
-                        <label for="user-password">
-                            PASSWORD
-                        </label>
-                        <input type="password" name="user-password" id="user-password">
-                    </div>
-                    <div class="field-container">
-                        <label for="confirm-password">
-                            CONFIRM PASSWORD
-                        </label>
-                        <input type="password" name="confirm-password" id="confirm-password">
-                    </div>
-                </div>
-                <div class="form-actions">
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
